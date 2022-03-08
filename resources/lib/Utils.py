@@ -13,7 +13,7 @@ from xml.dom.minidom import parse
 ADDON = xbmcaddon.Addon()
 ADDON_ID = ADDON.getAddonInfo('id')
 ADDON_LANGUAGE = ADDON.getLocalizedString
-ADDON_DATA_PATH = os.path.join(xbmc.translatePath("special://profile/addon_data/%s" % ADDON_ID))
+ADDON_DATA_PATH = os.path.join(xbmcvfs.translatePath("special://profile/addon_data/%s" % ADDON_ID))
 HOME = xbmcgui.Window(10000)
 SKINSETTINGS = xbmcgui.Window(10035)
 
